@@ -1,0 +1,759 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header Styles (Sticky) */
+header { 
+    background-color: #ff5a5f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Navbar Menu */
+.navmenu {
+    display: flex; 
+    /* Vertically center the items */
+
+}
+
+.navmenu a{
+    color:black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all 42s ease; 
+}  
+
+
+.nav menu a:hover {
+    color: #ee1c47;
+}
+
+/* Navbar Icons */
+.nav-icon i {
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 0.42s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #ee1c47;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    right: 20px;
+}
+
+/* Menu Icon (Hamburger) */
+#menu-icon {
+    font-size: 35px;
+    color: #2c2c2c;
+    cursor: pointer;
+    display: none;
+}
+
+/* Main Section */ 
+.main-home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('image/image/banner-3.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start; /* Align content to the top */
+    justify-content: flex-start; /* Align content to the left */
+    padding: 80px 20px 20px 20px; /* Padding to leave space for navbar */
+}
+
+.main-text {
+    color: #000; /* Change text to black for better contrast */
+    text-align: left; /* Align text to the left */
+    z-index: 1; /* Ensure it's above the background */
+    margin-left: 20px; /* Margin from the left edge */
+}
+
+.main-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Light overlay (white with 50% opacity) */
+    z-index: 0;
+}
+
+
+.main-text h5 {
+    color: #EE1C47;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.main-text h1 {
+    color: #000;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.main-text p {
+    color: #333c56; 
+    font-size: 20px;
+   font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn { 
+    display:inline-block;
+    padding: 12px 25px;
+    background-color: #ee1c47;
+    color: #111;
+    font-size: 16px; 
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    transition:all ,42s ease;
+}
+
+.main-btn:hover {
+    background-color: #333;
+    color:#fff;
+} 
+.main-btn i{ 
+    vertical-align: middle;
+}
+
+/* Trending Products */
+.trending-product {
+    padding: 80px 10%;
+}
+
+.center-text h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.center-text span {
+    color: #ee1c47;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.row:hover {
+    transform: translateY(-10px);
+}
+
+/* Price Section */
+.price h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.price p {
+    font-size: 18px;
+    color: #555;
+}
+
+.add-to-cart-btn {
+    padding: 8px 20px;
+    background-color: #ee1c47;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333; /* Dark text color */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #333; /* Dark color for icons */
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #666; /* Gray color for copyright text */
+} 
+
+.social-media a {
+    margin: 0 10px; /* Space between icons */
+    font-size: 20px; /* Size of icons */
+    transition: color 0.3s ease; /* Smooth color transition on hover */ 
+    color: white;
+}
+
+ 
+.rights-reserved {
+    color: white; /* White text color for contrast */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Margin for spacing */
+    position: relative; /* Ensure it stays within the footer */
+    width: 100%; /* Full width for the text */
+}
+ 
+
+
+
+/* Cart Page */
+.cart-page {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.cart-page h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+#cart-items {
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.cart-item h4 {
+    font-size: 20px;
+}
+
+.cart-item p {
+    font-size: 18px;
+}
+
+.cart-item span {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+    .navmenu {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Login and Sign-Up Container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container label {
+    font-size: 16px;
+    text-align: left;
+    color: #555;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #ee1c47;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ee1c47;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #333;
+}
+
+.login-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-container a {
+    color: #ee1c47;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive for Small Screens */
+@media only screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+footer {
+    background-color: black; /* Light background for footer */
+    padding: 20px 0; /* Padding around footer content */
+    text-align: center; /* Center align the text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for the footer content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Side padding */ 
+    color: white;
+}
+
+.footer-links {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0; /* Margin for spacing */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the links */ 
+
+}
+
+.footer-links li {
+    margin: 0 15px; /* Margin between links */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.footer-links a:hover {
+    color: #ee1c47; /* Change color on hover */
+}
+
+.social-links {
+    margin: 10px 0; /* Margin around social links */
+}
+
+.social-links a {
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.social-links a:hover {
+    color: #ee1c47; /* Change color on hover */
+} 
+.rights-reserved {
+    color: white; /* White text color for contrast */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Margin for spacing */
+    position: relative; /* Ensure it stays within the footer */
+    width: 100%; /* Full width for the text */
+}
+ 
+
+ 
+
+
+ main {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 80vh; /* Minimum height of main section */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for spacing */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below headings */
+}
+
+p {
+    margin-bottom: 10px; /* Space below paragraphs */
+}
+ 
+/* General Styles */
+body {
+    font-family: 'Jost', sans-serif; /* Use the imported font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Main Section */
+.main-home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('image/image/banner-3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 20px 20px 20px;
+}
+
+/* Text Styles */
+.main-text {
+    color: #000; /* Dark text color */
+    text-align: left;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+/* Light Overlay */
+.main-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Light overlay */
+    z-index: 0;
+}
+
+/* Button Styles */
+.main-btn {
+    background-color: #ff5a5f; /* Attractive button color */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+
+.main-btn:hover {
+    background-color: #ff3b3f; /* Darker shade on hover */
+}
+
+
+
+footer {
+    background-color: black; /* Background color for the footer */
+    padding: 20px 0; /* Padding for the footer content */
+    text-align: center; /* Center align the text */
+    color: white; /* Text color */
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for footer content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Side padding */ 
+}
+
+.footer-links {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    margin: 0 15px; /* Margin between links */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.footer-links a:hover {
+    color: #ee1c47; /* Change color on hover */
+}
+
+.social-links {
+    margin: 10px 0; /* Margin around social links */
+}
+
+.social-links a {
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.social-links a:hover {
+    color: #ee1c47; /* Change color on hover */
+}
+
+.rights-reserved {
+    color: white; /* White text color for contrast */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Margin for spacing */
+    position: relative; /* Ensure it stays within the footer */
+    width: 100%; /* Full width for the text */
+}
+
+
+
+
+#cart {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    margin-right: 10px;
+}
+
+.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: #ff1a1a;
+}
+ 
+
+/* General styles */
+
+
+
+
+.product-page {
+    padding-top: 80px; /* Increase this value based on navbar height */
+}
+ 
+
+.product-list {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Set exactly 3 columns */
+    gap: 30px; /* Space between items */
+    margin: 20px; /* Padding around the grid */ 
+} 
+
+.product-item {
+    background: #fff; /* Background color for product items */
+    border: 1px solid #ddd; /* Optional: border for product items */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 15px; /* Inner padding for product items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.product-item img {
+    width: 100%; /* Make the image take full width of its container */
+    height: auto; /* Set a fixed height */ 
+    max-height: 400px;
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+
+/* General reset for margins */
+body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Header styles (to prevent hiding under the navbar) */
+header {
+    position: sticky;
+    top: 0; /* Make sure the navbar stays at the top */
+    z-index: 10; /* Ensure navbar is above other content */
+    background: white; /* Background color to avoid transparency */
+}
+
+/* Add padding to product page to avoid images being hidden under navbar */
+.product-page {
+    padding-top: 70px; /* Adjust this value as per your navbar height */
+}
+
+/* Product grid setup */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items in a row */
+    gap: 20px; /* Space between grid items */
+    margin: 20px; /* Outer margin for the grid */
+}
+
+/* Product item styling */
+.product-item {
+    background: #fff; /* Background color for product items */
+    border: 1px solid #ddd; /* Optional: border for product items */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 15px; /* Inner padding for product items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Image styling */
+.product-item img {
+    width: 100%; /* Make the image take full width of its container */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+
+
+
+

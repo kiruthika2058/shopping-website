@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7KB+y+gLIBOVDS9IQIYICK65taqukzvf/nwasFenghPay5w913wVK2hMDcnK10MGCdVK-10-371zP30d1w" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body> 
+    <header>
+        <a href="#" class="logo"><img src="C:/Users/lenovo/Documents/website/image/image/logo.png" alt="K Shop Logo"></a>
+        <div class="navmenu">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="shop.html">Shop</a>
+        </div>
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="login.html"><i class='bx bx-user'></i></a>
+            <a href="cart.html"><i class='bx bx-cart'></i> <span id="cart-count">0</span></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>  
+    <br> 
+    <br>
+ 
+     
+
+    <section class="main-home">
+        <div class="main-text">
+            <h5>Winter collection</h5>
+            <h1>New winter <br> collection 2024</h1>
+            <p>There's Nothing like trend</p>
+            <a href="#trending" class='main-btn'>Shop Now</a>
+        </div>
+        <div class="down-arrow">
+            <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+        </div>
+    </section> 
+
+
+    <section class="trending-product" id="trending">
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span></h2>
+        </div>
+        <div class="products">
+            <div class="row">
+                <a href="image/image/1.jpg" target="_blank">
+                    <img src="image/image/1.jpg" alt="Half Running Set">
+                </a>
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="rating">
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Half Running Set</h4>
+                    <p>400 - 1290 Rs</p>
+                </div>
+                <button class="add-to-cart" data-name="Half Running Set" data-price="400 - 1290 Rs" data-image="image/image/1.jpg">
+                    <img src="image\image\cart.png" alt="Add to Cart" style="width: 30px; height: auto;"> <p>Add to cart</p>
+                </button>
+            </div>
+            <!-- Add more product blocks here -->
+            <div class="row">
+                <a href="image/image/2.jpg" target="_blank">
+                    <img src="image/image/2.jpg" alt="Stylish Winter Coat">
+                </a>
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="rating">
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Stylish Winter Coat</h4>
+                    <p>300-2000 Rs</p>
+
+                </div>
+                <button class="add-to-cart" data-name="Stylish Winter Coat" data-price="300-2000 Rs" data-image="image/image/2.jpg">
+                    <img src="image\image\cart.png" alt="Add to Cart" style="width: 30px; height: auto;"> <p>Add to cart</p>
+                </button>
+            </div>
+            <div class="row">
+                <a href="image/image/3.jpg" target="_blank">
+                    <img src="image/image/3.jpg" alt="Cozy Sweater">
+                </a>
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="rating">
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                    <h4>Cozy Sweater</h4>
+                    <p>600 - 1000 Rs</p>
+                </div>
+                <button class="add-to-cart" data-name="Cozy night wear" data-price="600 -1000 Rs"data-image="image/image/3.jpg">
+                    <img src="image\image\cart.png" alt="Add to Cart" style="width: 30px; height: auto;"> <p>Add to cart</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" style="display:none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="checkout-button">Proceed to Checkout</button>
+    </section>
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class='bx bxl-instagram'></i>
+            </a> 
+
+            <a href="https://x.com/?lang=en" target="_blank">
+                <i class='bx bxl-twitter'></i>
+            </a> 
+            
+        </div>
+    </div>
+    <div class="rights-reserved">© 2024 K Shop. All rights reserved.</div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
