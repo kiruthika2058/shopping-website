@@ -1,0 +1,55 @@
+{
+    "clothes": [
+        {
+            "id": 1,
+            "name": "Half Running Set",
+            "image": "images/dress/1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Stylish Winter Coat",
+            "image": "images/dress/2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Cozy Sweater",
+            "image": "images/dress/3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Elegant Dress",
+            "image": "images/dress/4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Casual Shirt",
+            "image": "images/dress/5.jpg"
+        }
+    ,
+    {
+        "id": 6,
+        "name": "Leather Jacket",
+        "image": "images/dress/6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Sports Shoes",
+        "image": "images/dress/7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Denim Jacket",
+        "image": "images/dress/8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Silk Saree",
+        "image": "images/dress/saree.png"
+    },
+    {
+        "id": 10,
+        "name": "Cotton Kurti",
+        "image": "images/dress/kurti.png"
+    }
+    ]
+}

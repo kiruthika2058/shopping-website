@@ -43,7 +43,7 @@ header {
     text-transform: capitalize;
     padding: 10px 20px;
     font-weight: 400;
-    transition: all 42s ease; 
+    transition: all 1.5s ease; 
 }  
 
 
@@ -221,6 +221,11 @@ header {
     font-size: 14px;
     border-radius: 5px;
     transition: background-color 0.3s;
+}
+
+.add-to-cart{
+    padding: 10px;
+    border-radius: 25px;
 }
 
 .add-to-cart-btn:hover {
@@ -634,7 +639,11 @@ footer {
 }
 
 
-
+.our-pro{
+    padding: 10px 10%;
+    font-size: 40px;
+    text-align: center;
+}
 
 #cart {
     padding: 20px;
@@ -696,10 +705,14 @@ footer {
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center items horizontally */
     image-resolution: from-image; /* Use image resolution */
+    transition: transform 0.3s ease-in-out;
 
 }
 
-
+.product-item:hover {
+    transform: translateY(-15px);
+    background-color: #0d00461b;
+}
 
 .product-item img {
     width: 100%; /* Make the image take full width of its container */
