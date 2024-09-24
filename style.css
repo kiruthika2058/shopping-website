@@ -695,7 +695,11 @@ footer {
     display: flex; /* Use flexbox to center content */
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center items horizontally */
+    image-resolution: from-image; /* Use image resolution */
+
 }
+
+
 
 .product-item img {
     width: 100%; /* Make the image take full width of its container */
