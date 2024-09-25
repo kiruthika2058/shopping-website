@@ -101,22 +101,21 @@ header {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url('image/image/banner-3.jpg'); /* Background image */
+    background-image: url('image/banners/banner-3.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    align-items: flex-start; /* Align content to the top */
-    justify-content: flex-start; /* Align content to the left */
-    padding: 80px 20px 20px 20px; /* Padding to leave space for navbar */
+    align-items: flex-start; 
+    justify-content: flex-start;
+    padding: 80px 20px 20px 20px;
 }
 
 .main-text {
-    color: #000; /* Change text to black for better contrast */
-    text-align: left; /* Align text to the left */
-    z-index: 1; /* Ensure it's above the background */
-    margin-left: 20px; /* Margin from the left edge */
-}
+    color: #000; 
+    text-align: left;
+    z-index: 1;
+    margin-left: 20px; }
 
 .main-home::before {
     content: '';
@@ -125,7 +124,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* Light overlay (white with 50% opacity) */
+    background: rgba(255, 255, 255, 0.5);
     z-index: 0;
 }
 
@@ -554,7 +553,7 @@ body {
     font-family: 'Jost', sans-serif; /* Use the imported font */
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f9f9f9;
 }
 
 /* Main Section */
@@ -562,7 +561,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url('image/image/banner-3.jpg');
+    background-image: url('image/banners/banner-3.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
