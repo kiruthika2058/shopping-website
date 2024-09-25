@@ -81,7 +81,7 @@ header {
 
 
 #cart-count {
-    position: absolute;
+    position: fixed;
     background-color: red;
     width: 25px;
     height: 25px;
@@ -91,8 +91,8 @@ header {
     align-items: center;
     border-radius: 50%;
     color: #fff;
-    top: 50%;
-    right: 160px;
+    top: 6%;
+    right: 10.5%;
 }
 
 /* Menu Icon (Hamburger) */
@@ -387,13 +387,7 @@ footer {
 
 /* Responsive Media Queries */
 @media only screen and (max-width: 768px) {
-    .navmenu {
-        display: none;
-    }
-
-    #menu-icon {
-        display: block;
-    }
+     
 
     .products {
         flex-direction: column;
@@ -819,6 +813,57 @@ header {
     height: 200px; /* Set a fixed height */
     object-fit: cover; /* Ensure image covers the area */
     border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .cart-count {
+        margin-left: 100px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .product-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .product-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media only screen and (max-width: 627px) {
+    #search{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 565px) {
+    
+    .logo img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #login{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .main-home{
+        background-image: url('image/banners/banner-mob.png');
+    }
 }
 
 

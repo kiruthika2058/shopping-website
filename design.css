@@ -261,6 +261,63 @@ body.showCart .container{
 }
 
 
+
+footer {
+    background-color: black; /* Background color for the footer */
+    padding: 20px 0; /* Padding for the footer content */
+    text-align: center; /* Center align the text */
+    color: white; /* Text color */
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for footer content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Side padding */ 
+}
+
+.footer-links {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link color */
+    margin: 0 15px; /* Margin between links */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.footer-links a:hover {
+    color: #ee1c47; /* Change color on hover */
+}
+
+.social-links {
+    margin: 10px 0; /* Margin around social links */
+}
+
+.social-links a {
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.social-links a:hover {
+    color: #ee1c47; /* Change color on hover */
+}
+
+.rights-reserved {
+    color: white; /* White text color for contrast */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Margin for spacing */
+    position: relative; /* Ensure it stays within the footer */
+    width: 100%; /* Full width for the text */
+}
+
+
+
 @media only screen and (max-width: 992px) {
     .listProduct{
         grid-template-columns: repeat(3, 1fr);
