@@ -562,7 +562,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url('image/image/banner-3.jpg');
+    background-image: url('image/banners/banner-3.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
