@@ -25,6 +25,7 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+
 .logo img {
     max-width: 120px;
     height: auto;
@@ -77,15 +78,21 @@ header {
     color: #ee1c47;
 }
 
+
+
 #cart-count {
+    position: absolute;
     background-color: red;
-    color: white;
-    font-size: 14px;
-    padding: 4px 8px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    position: relative;
-    top: -10px;
-    right: 20px;
+    color: #fff;
+    top: 50%;
+    right: 160px;
 }
 
 /* Menu Icon (Hamburger) */
@@ -218,6 +225,15 @@ header {
     margin-bottom: 10px;
 }
 
+.down{
+    font-size: 30px;
+    color: #ee1c47;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
 .price p {
     font-size: 18px;
     color: #555;
@@ -237,12 +253,23 @@ header {
 .add-to-cart{
     padding: 10px;
     border-radius: 25px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+    color: white;
+    transition: all 0.5s ease-in-out;
 }
 
 .add-to-cart-index{
     padding: 10px;
     width: 150px;
     margin-left: 35%;
+    cursor: pointer;
+    color: black;
     border-radius: 20px;
 }
 .add{

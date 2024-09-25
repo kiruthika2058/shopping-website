@@ -2,61 +2,61 @@
     {
         "id": 1,
         "name":"Half Running Set",
-        "price": "400-1290 Rs",
+        "price": 1290,
         "image": "image/dress/1.jpg"
     },
     {
         "id": 2,
         "name":"Stylish Winter Coat",
-        "price": "300-2000 Rs",
+        "price": 1500,
         "image": "image/dress/2.jpg"
     },
     {
         "id": 3,
         "name":"Cozy Sweater",
-        "price": "600 - 1000 Rs",
+        "price": 1000,
         "image": "image/dress/3.jpg"
     },
     {
         "id": 4,
         "name":"Elegant Dress",
-        "price": "300 - 800 Rs",
+        "price": 800,
         "image": "image/dress/4.jpg"
     },
     {
         "id": 5,
         "name": "Casual Shirt",
-        "price": "200 - 400 Rs",
+        "price": 400,
         "image":"image/dress/5.jpg"
     },
     {
         "id": 6,
         "name":"Leather Jacket",
-        "price":"500 - 1000 Rs",
+        "price": 1000,
         "image": "image/dress/6.jpg"
     },
     {
         "id": 7,
         "name":"Sports Shoes",
-        "price": "1000 - 2000 Rs",
+        "price": 1000,
         "image":"image/dress/7.jpg"
     },
     {
         "id": 8,
         "name":"Denim Jacket",
-        "price": "750 - 2000 Rs",
+        "price": 750,
         "image":"image/dress/8.jpg"
     }, 
     {
         "id": 9,
         "name": "Silk Saree", 
-        "price": "2000 - 3000 Rs",
+        "price": 2000,
         "image": "image/dress/saree.png"
     },
     {
         "id": 10,
         "name": "Cotton Kurti", 
-        "price": "500 - 1000 Rs",
+        "price": 500,
         "image": "image/dress/kurti.png"
     } 
 ]

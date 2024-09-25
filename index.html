@@ -33,14 +33,11 @@
      
 
     <section class="main-home">
-        <div class="main-text">
+        <div class="main-text" id="up">
             <h5>Winter collection</h5>
             <h1>New winter <br> collection 2024</h1>
             <p>There's Nothing like trend</p>
             <a href="#trending" class='main-btn'>Shop Now</a>
-        </div>
-        <div class="down-arrow">
-            <a href="#trending" class="down"><i class='bx bx-down-arrow-alt'></i></a>
         </div>
     </section> 
 
@@ -68,9 +65,9 @@
                     <h4>Half Running Set</h4>
                     <p>400 - 1290 Rs</p>
                 </div>
-                <button class="add-to-cart-index" data-name="Half Running Set" data-price="400 - 1290 Rs" data-image="image/dress/1.jpg">
+                <a class="black" href="cart.html"><button class="add-to-cart-index" data-name="Half Running Set" data-price="400 - 1290 Rs" data-image="image/dress/1.jpg">
                     <img src="image/icons/cart.png" alt="Add to Cart" style="width: 30px; height: auto;"> <p class="add">Add to cart</p>
-                </button>
+                </button></a>
             </div>
             <!-- Add more product blocks here -->
             <div class="row">
@@ -92,9 +89,9 @@
                     <p>300-2000 Rs</p>
 
                 </div>
-                <button class="add-to-cart-index" data-name="Stylish Winter Coat" data-price="300-2000 Rs" data-image="image/dress/2.jpg">
+                <a class="black" href="cart.html"><button class="add-to-cart-index" data-name="Stylish Winter Coat" data-price="300-2000 Rs" data-image="image/dress/2.jpg">
                     <img src="image/icons/cart.png" alt="Add to Cart" style="width: 30px; height: auto;"> <p class="add">Add to cart</p>
-                </button>
+                </button></a>
             </div>
             <div class="row">
                 <a href="image/dress/3.jpg" target="_blank">
@@ -114,12 +111,13 @@
                     <h4>Cozy Sweater</h4>
                     <p>600 - 1000 Rs</p>
                 </div>
-                <button class="add-to-cart-index" data-name="Cozy night wear" data-price="600 -1000 Rs"data-image="image/dress/3.jpg">
+                <a class="black" href="cart.html"><button class="add-to-cart-index" data-name="Cozy night wear" data-price="600 -1000 Rs"data-image="image/dress/3.jpg">
                     <img src="image/icons/cart.png" alt="Add to Cart" style="width: 30px; height: auto;"> <p class="add">Add to cart</p>
-                </button>
+                </button></a>
             </div>
         </div>
     </section>
+    
 
     <!-- Cart Section -->
     <section id="cart" style="display:none;">
@@ -127,6 +125,9 @@
         <div id="cart-items"></div>
         <button id="checkout-button">Proceed to Checkout</button>
     </section>
+    <!-- <div class="down-arrow"></div>
+        <a href="#up" class="down"><i class='bx bx-up-arrow-alt'></i></a>
+    </div> -->
     <!-- Footer -->
 <footer>
     <div class="footer-content">

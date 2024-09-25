@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     font-family: Poppins;
@@ -10,6 +20,77 @@ body{
     padding-top: 10px;
     transition: transform .5s;
 }
+
+.prohead { 
+    background-color: #ff5a5f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Navbar Menu */
+.navmenu {
+    display: flex;
+    margin-right: 45%;
+    margin-left: 28%;
+    /* Vertically center the items */
+
+}
+
+.navmenu a{
+    color:black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all 1.5s ease; 
+    
+}  
+
+
+.navmenu a:hover {
+    color: #ee1c47;
+    margin: 0 10px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+}
+
+
+/* Navbar Icons */
+.nav-icon i {
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 0.42s ease;
+}
+
+#diff{
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(91, 2, 2, 0.504);
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #ee1c47;
+}
+
+
 svg{
     width: 30px;
 }
@@ -20,6 +101,7 @@ header{
     padding: 20px 0;
 }
 .icon-cart{
+    
     position: relative;
 }
 .icon-cart span{
@@ -28,6 +110,7 @@ header{
     width: 30px;
     height: 30px;
     display: flex;
+    font-weight: bolder;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -37,14 +120,18 @@ header{
 }
 .title{
     font-size: xx-large;
+    font-family: 'Jost', sans-serif;
+    margin-left: 40%;
+    font-weight: bolder;
 }
 .listProduct .item img{
     width: 90%;
-    filter: drop-shadow(0 50px 20px #0009);
+    border-radius: 15%;
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.292));
 }
 .listProduct{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 .listProduct .item{
@@ -53,20 +140,31 @@ header{
     border-radius: 20px;
 }
 .listProduct .item h2{
-    font-weight: 500;
+    font-weight: bolder;
+    margin-top: 10%;
+    font-family: 'Jost', sans-serif;
     font-size: large;
 }
 .listProduct .item .price{
-    letter-spacing: 7px;
-    font-size: small;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 750;
 }
 .listProduct .item button{
     background-color: #353432;
     color: #eee;
     border: none;
     padding: 5px 10px;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: bolder;
     border-radius: 20px;
+}
+
+.listProduct .item button:hover{
+    background-color: #41000276;
+    color: #fff;
+    transition: all 0.5s ease;
 }
 
 /* cart */
@@ -75,7 +173,7 @@ header{
     background-color: #353432;
     color: #eee;
     position: fixed;
-    top: 0;
+    top: 75px;
     right: -400px;
     bottom: 0;
     display: grid;
@@ -126,6 +224,22 @@ body.showCart .container{
     color: #555;
     cursor: pointer;
 }
+
+.listCart .quantity .minus,.plus{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.listCart .quantity span:hover{
+    background-color: #ff5a5abc;
+    color: #eee;
+}
+
+.listCart .totalPrice{
+    font-size: 13px;
+    font-weight: bolder;
+}
+
 .listCart .quantity span:nth-child(2){
     background-color: transparent;
     color: #eee;
@@ -137,9 +251,17 @@ body.showCart .container{
 .listCart{
     overflow: auto;
 }
+
 .listCart::-webkit-scrollbar{
     width: 0;
 }
+
+.btn .close,.btn .checkOut{
+    font-family: 'jost', sans-serif;
+    font-weight: bolder;
+}
+
+
 @media only screen and (max-width: 992px) {
     .listProduct{
         grid-template-columns: repeat(3, 1fr);
